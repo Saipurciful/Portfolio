@@ -19,6 +19,7 @@ body {
 
 /* ----------  NAVBAR ---------- */
 
+
 nav {
   z-index: 2;
 }
@@ -332,9 +333,13 @@ nav ul li {
   padding: 3rem 0;
 }
 
+.portfolio-wrapper h1 {
+  color: var(--primary-orange);
+}
+
 .portfolio-image {
   width: 15rem;
-
+  /* height: 20rem; */
   border: 0.15rem solid var(--primary-orange);
   padding: 0 0.5rem;
 }
@@ -351,7 +356,7 @@ nav ul li {
   opacity: 0;
   background: var(--primary-black);
   width: 15rem;
-  height: 24rem;
+  height: 8rem;
   top: 0;
   border: 1px solid var(--primary-red);
   cursor: pointer;
@@ -375,4 +380,53 @@ nav ul li {
   opacity: 70%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+
+/* ----------  OVERFLOW BOX ---------- */
+
+.portfolio-image-popupbox {
+  width: 45rem;
+  /* height: 40rem; */
+  padding: 0 0.5rem;
+}
+
+.hyper-link {
+  cursor: pointer;
+  color: var(--primary-orange);
+
+}
+
+.hyper-link:hover {
+  color: var(--primary-red);
+
+}
+
+/* ----------  MEDIa ---------- */
+
+
+@media(max-width: 768px) {
+  .portfolio-image-popupbox {
+    width: 100%;
+  }
+}
+
+
+@media(max-height: 570px) {
+  .popupbox-wrapper {
+    height: 100%;
+  }
+
+  .portfolio-image-popupbox {
+    width: 50%;
+  }
+}
+
+@media(max-height: 280px) {
+  .popupbox-wrapper {
+    height: 90%;
+  }
+
+  .portfolio-image-popupbox {
+    width: 30%;
+  }
 }

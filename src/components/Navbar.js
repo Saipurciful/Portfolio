@@ -1,4 +1,3 @@
-import React from "react";
 import Sai from "../sai.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
