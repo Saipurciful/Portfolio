@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Rock+Salt&family=Ruthie&display=swap');
 
 :root {
   --primary-white: #ffffff;
@@ -19,6 +19,12 @@ body {
 
 /* ----------  NAVBAR ---------- */
 
+.navbar-brand h1 {
+  font-family: 'Ruthie',
+    cursive;
+  color: var(--primary-white);
+  letter-spacing: 0.5rem;
+}
 
 nav {
   z-index: 2;
@@ -76,7 +82,7 @@ nav ul li {
   background: url(backg.png) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .main-info {
@@ -111,6 +117,8 @@ nav ul li {
 /* ----------  TYPED TEXT ---------- */
 
 .typed-text {
+  font-family: 'Architects Daughter',
+    cursive;
   font-size: 2rem;
   color: var(--primary-white);
 }
@@ -150,6 +158,10 @@ nav ul li {
 
 /* ----------  ABOUT ME ---------- */
 
+#about {
+  height: 100vh;
+}
+
 .photo-wrap {
   display: flex;
   justify-content: center;
@@ -166,6 +178,8 @@ nav ul li {
 .about-heading {
   color: var(--primary-orange);
   text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 2rem;
 }
 
 @media(max-width: 468px) {
@@ -173,6 +187,68 @@ nav ul li {
     width: 10rem;
   }
 }
+
+/* ----------  CONTACT ---------- */
+
+.contact {
+
+  text-align: center;
+}
+
+.contact h1 {
+
+  text-transform: uppercase;
+  color: var(--primary-orange);
+}
+
+
+.containerLogin {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+button {
+  padding: 5px;
+}
+
+.contentCard img {
+  width: 150px;
+  height: 150px;
+
+}
+
+.contentCard button {
+  margin-top: 10%;
+}
+
+
+.containerLogin .cardS {
+  position: relative;
+  width: 280px;
+  height: 400px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.containerLogin .cardS .contentCard {
+  padding: 20px;
+  text-align: center;
+
+}
+
 
 /* ----------  SERVICES ---------- */
 
@@ -183,7 +259,7 @@ nav ul li {
 }
 
 .services h1 {
-  color: var(--primary-dark);
+  color: var(--primary-orange);
   text-transform: uppercase;
 }
 
@@ -328,6 +404,10 @@ nav ul li {
 
 /* ----------  PORTFOLIO ---------- */
 
+#portfolio {
+  height: 100vh;
+}
+
 .portfolio-wrapper {
   background: var(--primary-light-grey);
   padding: 3rem 0;
@@ -347,6 +427,30 @@ nav ul li {
 .portfolio-image-box {
   position: relative;
   margin: 1rem;
+}
+
+/* ----------  RESUME ---------- */
+
+.resume h1 {
+  text-transform: uppercase;
+  color: var(--primary-orange);
+  text-align: center;
+  background-color: var(--primary-light-grey);
+}
+
+
+.resume {
+  height: 100vh;
+  width: 100vw;
+}
+
+.pdf {
+  background-color: skyblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
 }
 
 /* ----------  OVERFLOW BOX ---------- */
@@ -380,6 +484,10 @@ nav ul li {
   opacity: 70%;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.popupbox-wrapper {
+  margin-top: 7rem;
 }
 
 /* ----------  OVERFLOW BOX ---------- */
@@ -429,4 +537,42 @@ nav ul li {
   .portfolio-image-popupbox {
     width: 30%;
   }
+}
+
+/* ----------  FOOTER ---------- */
+
+.footer {
+  background: var(--primary-dark);
+  color: var(--primary-dark-grey);
+  padding: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+.footer .circle {
+  position: relative;
+  /* margin: 0.10rem; */
+  margin-right: 2%;
+  background: var(--primary-orange);
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+}
+
+.footer .icon {
+  font-size: 1.2rem;
+  position: absolute;
+  color: var(--primary-white);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer .icon:hover {
+  color: var(--primary-dark);
+  cursor: pointer;
+}
+
+.footer .circle:hover {
+  background: var(--primary-light-grey);
 }

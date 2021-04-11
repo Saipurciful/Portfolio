@@ -1,22 +1,24 @@
 import React from "react";
-import sai from "../22.png"
+import { Card } from "react-bootstrap";
+import sai from "../pictures/22.png"
 
 const AboutMe = () => {
     return (
-        <div className="container py-5">
+        <div id="about" className="container py-5">
+            <h1 className="about-heading">About Me</h1>
             <div className="row">
-                <div className="col-lg-6 col-xm-12">
+                <Card className="col-lg-6 col-xm-12">
                     <div className="photo-wrap mb-5">
                         <img className="profile-img" src={sai} alt="sai" />
                     </div>
-                </div>
+                </Card>
                 <div className="col-lg-6 col-xm-12">
-                    <h1 className="about-heading">About Me</h1>
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium culpa soluta maiores corporis labore laboriosam, deleniti exercitationem dolorem odit nostrum!lorem30
 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatem adipisci sed explicabo nobis esse aspernatur nemo maiores exercitationem? Error sapiente nulla quisquam incidunt. Commodi reiciendis quos architecto ad obcaecati.
-                    </p>
+                    <p>Successful professional with a bachelor’s degree in hotel management, two years of experience in
+                large-scale hotel management, and four years of experience as a licensed massage therapist. </p>
+                    <p> Seeking a career change to a full-stack web developer for a fast-paced company with big goals that I can
+                    be a part of. Driven self-starter and lifelong learner who tackles difficult tasks with a team-player
+                attitude.</p>
 
                 </div>
             </div>
