@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="row">
 
                     <p className="pt-2">
-                        Copyright &copy; {new Date().getFullYear()}&nbsp;Suthunya Purciful | Creadted by React.js
+                        Copyright &copy; {new Date().getFullYear()}&nbsp; Sai Purciful | Created by React.js
                  </p>
 
 

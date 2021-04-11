@@ -516,11 +516,19 @@ button {
   .portfolio-image-popupbox {
     width: 100%;
   }
+
+  .pdf {
+    width: 100%;
+  }
 }
 
 
 @media(max-height: 570px) {
   .popupbox-wrapper {
+    height: 100%;
+  }
+
+  .pdf {
     height: 100%;
   }
 
@@ -532,6 +540,10 @@ button {
 @media(max-height: 280px) {
   .popupbox-wrapper {
     height: 90%;
+  }
+
+  .pdf {
+    height: 100%;
   }
 
   .portfolio-image-popupbox {

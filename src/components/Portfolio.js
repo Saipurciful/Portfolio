@@ -108,8 +108,8 @@ const Portfolio = () => {
 
 
 
-                    <div className="portf   olio-image-box" onClick={openPopupboxSecond}>
-                        <img className="portfolio-image" src={mb} alt="project" />
+                    <div className="portfolio-image-box" onClick={openPopupboxSecond}>
+                        <img className="portfolio-image" src={project} alt="project" />
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
