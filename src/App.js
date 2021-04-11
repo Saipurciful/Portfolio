@@ -26,10 +26,10 @@ function App() {
               }
             },
             shape: {
-              type: "square",
+              type: "polygon",
               stroke: {
-                width: 6,
-                color: "#f9ab00"
+                width: 9,
+                color: "#ffffff"
               }
             }
           }

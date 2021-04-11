@@ -8,7 +8,7 @@ import { Link } from 'react-scroll'
 const Footer = () => {
     return (
         <div className="footer fixed-bottom">
-            <div className="container">
+            <div className="container pt-2">
                 <div className="row">
 
                     <p className="pt-2">
