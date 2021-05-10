@@ -10,13 +10,13 @@ const Header = () => {
                 <h1>Su·thun·ya Purciful</h1>
                 <Typed
                     className="typed-text"
-                    strings={["Full Stack Web Developer", "Freelancer", "Web Designer"]}
-                    typeSpeed={35}
+                    strings={["Front-end Developer", "Full Stack Web Developer", "Freelancer"]}
+                    typeSpeed={30}
                     backSpeed={60}
                     loop
                 />
 
-                <Link to="home" href="#" className="btn-main-offer"> Contact Me</Link>
+                <Link smooth={true} to="contact" offset={-70} href="#" className="btn-main-offer"> Contact Me</Link>
 
             </div>
         </div>

@@ -10,7 +10,7 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-right">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <hr />
+                        <hr className="hr" />
                         <h3>2018 to Present</h3>
                         <h5>Massage Therapist</h5>
                         <p> <span>Massage Envy, Bellevue, Washington</span></p>
@@ -27,7 +27,7 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-left">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <hr />
+                        <hr className="hr" />
                         <h3>05/2017 to 09/2018</h3>
                         <h5>Massage Therapist</h5>
                         <p> <span>Massage Envy, Las Vegas, Nevada</span></p>
@@ -41,7 +41,7 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-right">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <hr />
+                        <hr className="hr" />
                         <h3>06/2017 to 09/2018</h3>
                         <h5>Massage Therapist</h5>
                         <p> <span>Nuture Spa & Salon, Luxor Hotel & Casino, Las Vegas, NV</span></p>
@@ -55,7 +55,7 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-left">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <hr />
+                        <hr className="hr" />
                         <h3>05/2015 to 06/2017</h3>
                         <h5> HouseKeeping Supervisor</h5>
                         <p> <span>The Service Companies, The Linq Hotel & Casino, Las Vegas, NV</span></p>
@@ -69,7 +69,7 @@ const Experience = () => {
                 <div className="timeline-block timeline-block-right">
                     <div className="marker"></div>
                     <div className="timeline-content">
-                        <hr />
+                        <hr className="hr" />
                         <h3>01/2006 to 2015</h3>
                         <h5>Nanny</h5>
                         <p> <span>Individual family's home, Austin, TX and Las Vegas, NV</span></p>

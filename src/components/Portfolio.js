@@ -1,144 +1,79 @@
-import React from "react";
-import project from "../backg.png"
-import mb from "../pictures/22.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSearchPlus } from "@fortawesome/free-solid-svg-icons";
+import React from 'react'
+import { FaGithub } from "react-icons/fa"
+import Burger from "../pictures/burger.png"
+import Calendar from "../pictures/calendar.png"
+import Cocktail from "../pictures/cocktail.png"
+import Code from "../pictures/codeq.png"
+import NoteTaker from "../pictures/noteTaker.png"
+import Coffee from "../pictures/caffee.png"
 
-import { PopupboxContainer, PopupboxManager } from "react-popupbox";
-import "react-popupbox/dist/react-popupbox.css"
-
-const Portfolio = () => {
-
-    // Magnificent Beasts
-    const openPopupboxMagnificent = () => {
-        const content = (
-            <>
-                <img className="portfolio-image-popupbox" src={project} alt="" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, debitis.</p><b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Saipurciful")}>https://github.com/Saipurciful</a>
-            </>
-        )
-        PopupboxManager.open({ content })
-
-    }
-
-    const popupboxConfigMagnificent = {
-        titleBar: {
-            enable: true,
-            text: "Magnificent Beasts Project."
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-    }
-
-    // Second Beasts
-    const openPopupboxSecond = () => {
-        const content = (
-            <>
-                <img className="portfolio-image-popupbox" src={mb} alt="" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, debitis.</p><b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Saipurciful")}>https://github.com/Saipurciful</a>
-            </>
-        )
-        PopupboxManager.open({ content })
-
-    }
-
-    const popupboxConfigSecond = {
-        titleBar: {
-            enable: true,
-            text: "Second Beat Project."
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-    }
-
-    // Third project
-    const openPopupboxThird = () => {
-        const content = (
-            <>
-                <img className="portfolio-image-popupbox" src={project} alt="" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, debitis.</p><b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Saipurciful")}>https://github.com/Saipurciful</a>
-            </>
-        )
-        PopupboxManager.open({ content })
-
-    }
-
-    const popupboxConfigThird = {
-        titleBar: {
-            enable: true,
-            text: "Third Project."
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-    }
-
-    // Fourth project
-    const openPopupboxFourth = () => {
-        const content = (
-            <>
-                <img className="portfolio-image-popupbox" src={project} alt="" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, debitis.</p><b>Github:</b> <a className="hyper-link" onClick={() => window.open("https://github.com/Saipurciful")}>https://github.com/Saipurciful</a>
-            </>
-        )
-        PopupboxManager.open({ content })
-
-    }
-
-    const popupboxConfigFourth = {
-        titleBar: {
-            enable: true,
-            text: "Fourth Project."
-        },
-        fadeIn: true,
-        fadeInSpeed: 500
-    }
-
+function Portfolio() {
     return (
+        <div className="portfolio">
+            <h1 className="p-y5">Portfolio</h1>
+            <section className="port">
+                <div className="thumb">
+                    <img src={Burger} alt="" />
 
-        <div id="portfolio" className="portfolio-wrapper">
-            <div className="container">
-                <h1 className="text-uppercase text-center py-5">Portfolio</h1>
-                <div className="image-box-wrapper row justify-content-center">
+                    <h5><a href="https://evening-wildwood-75697.herokuapp.com/">JS: Eat-Da-Burger
+                        </a></h5>
+                    <br /><a href="https://github.com/Saipurciful/burger">  <FaGithub />
+                     Code </a>
 
-                    <div className="portfolio-image-box" onClick={openPopupboxMagnificent}>
-                        <img className="portfolio-image" src={project} alt="project" />
-                        <div className="overflow"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                    </div>
-
-
-
-                    <div className="portfolio-image-box" onClick={openPopupboxSecond}>
-                        <img className="portfolio-image" src={project} alt="project" />
-                        <div className="overflow"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                    </div>
-
-                    {/* - */}
-
-                    <div className="portfolio-image-box" onClick={openPopupboxThird}>
-                        <img className="portfolio-image" src={project} alt="project" />
-                        <div className="overflow"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                    </div>
-
-                    {/* - */}
-
-                    <div className="portfolio-image-box" onClick={openPopupboxFourth}>
-                        <img className="portfolio-image" src={project} alt="project" />
-                        <div className="overflow"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
-                    </div>
 
                 </div>
-            </div >
-            <PopupboxContainer {...popupboxConfigMagnificent} />
-            <PopupboxContainer {...popupboxConfigSecond} />
-            <PopupboxContainer {...popupboxConfigThird} />
-            <PopupboxContainer {...popupboxConfigFourth} />
-        </div >
 
+                <div className="thumb" data-id="JS/HTML/CSS">
+                    <img src={Calendar} alt="" />
+
+                    <h5> <a href="https://saipurciful.github.io/DailyCalendar/">JS: Daily Calendar
+                         </a> </h5> <br /> <a href="https://github.com/Saipurciful/DailyCalendar"><FaGithub />
+                         Code </a>
+
+
+                </div>
+
+                <div className="thumb" data-id="JS/HTML/CSS">
+                    <img src={Cocktail} alt="" />
+
+                    <h5><a href="https://samrod777.github.io/Recipe-List-Platform/">
+                        JS: Meals Generator</a> </h5> <br /> <a href="https://github.com/samrod777/Recipe-List-Platform"><FaGithub />
+                    Code </a>
+
+
+
+                </div>
+
+                <div className="thumb" data-id="JS/HTML/CSS">
+                    <img src={Code} alt="" />
+                    <h5>  <a href="https://saipurciful.github.io/JS-CodeQuiz/">
+                        JS: CodeQuiz </a></h5> <br /> <a href="https://github.com/Saipurciful/JS-CodeQuiz"><FaGithub />
+                    Code </a>
+
+
+                </div>
+
+                <div className="thumb" data-id="JS/HTML/CSS">
+                    <img src={NoteTaker} alt="" />
+                    <h5><a href="https://notetakerapplic.herokuapp.com/">
+                        JS: Note Taker</a> </h5> <br /> <a href="https://github.com/Saipurciful/Note-Taker"><FaGithub />
+                    Code </a>
+
+
+                </div>
+
+                <div className="thumb" data-id="Handlebars">
+                    <img src={Coffee} alt="" />
+                    <h5><a href="https://caffeinparadise2.herokuapp.com/signup.html">HANDLEBAR: Caffeine </a></h5> <br /> <a href="https://github.com/aprilyanggarwood/CaffeinParadise2/tree/Sai"><FaGithub /> Code </a>
+
+                </div>
+
+
+            </section>
+
+        </div>
     )
+
 }
 
 export default Portfolio

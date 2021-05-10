@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar"
 import Header from "./components/Header"
 import AboutMe from "./components/AboutMe"
 import Experience from "./components/Experience"
-import Services from "./components/Services"
+
 import Portfolio from "./components/Portfolio"
 import Footer from "./components/Footer"
 import Contact from './components/Contact';
@@ -38,7 +38,7 @@ function App() {
       <Navbar />
       <Header />
       <AboutMe />
-      <Services />
+      
       <Experience />
       <Portfolio />
       <Contact />
